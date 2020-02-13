@@ -30,7 +30,7 @@ header{
     background: #222;
     padding: 15px;
     z-index: 2;
-    opacity:0.2;
+    opacity:0.55;
     /* add the animation*/
     transition: margin 0.8s;
   }
@@ -121,16 +121,17 @@ header{
 
 footer {
     background-color: #777;
-    padding: 20px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-style: bold;
-    display: inline;
+    width:auto;
+    height: 60px;
     color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
     left: 0;
+    right:0;
+    bottom:0;
+
 }
 
 .f1{list-style-type: none;
