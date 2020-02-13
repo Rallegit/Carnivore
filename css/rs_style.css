@@ -1,2 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap');
+.gridcontainer{
+display:grid;
+width: 95%;
+height: auto;
+margin: 20px auto;
+grid-gap: 1% 1.5%;
+grid-template-rows: repeat(8, minmax(260px, 1fr));
+grid-template-columns: 1fr;
+grid-template-areas: 
+'head'
+'box1'
+'box2'
+'box3'
+'box4'
+'box5'
+'box6'
+'foot'
+;
+}
+.head{
+	grid-area: head;
+	border: 1px solid #333;
+}
+.box1{
+	grid-area: box1;
+	border: 1px solid #333;
+}
+.box2{
+	grid-area: box2;
+	border: 1px solid #333;
+}
+.box3{
+	grid-area: box3;
+	border: 1px solid #333;
+}
+.box4{
+	grid-area: box4;
+	border: 1px solid #333;
+}
+.box5{
+	grid-area: box5;
+	border: 1px solid #333;
+}
+.box6{
+	grid-area: box6;
+	border: 1px solid #333;
+}
+footer {
+    grid-area: foot;
+    background-color: #777;
+    font-size: 12px;
+    text-align: center;
+    font-style: bold;
+    height: 100px;
+    color: white;
+    left: 0;
+    right:0;
+    bottom:0;
+}
+.f1{list-style-type: none;
+  display:inline;
+  padding: 10px;
+ }
 
+/* Wide Desktop */
+/* Wide Desktop */
+/* Wide Desktop */ 
+@media only screen and (min-width: 1200px) {
+    .gridcontainer{
+        display:grid;
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+        grid-gap: 1% 1.5%;
+        grid-template-rows: repeat(3, minmax(260px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        'head head head head'
+        'box1 box2 box3 box4'
+        'box5 box6 box7 box8'
+        'foot foot foot foot'
+        ;
+        }
+        .head{
+            grid-area: head;
+            border: 1px solid #333;
+        }
+        .box1{
+            grid-area: box1;
+            border: 1px solid #333;
+        }
+        .box2{
+            grid-area: box2;
+            border: 1px solid #333;
+        }
+        .box3{
+            grid-area: box3;
+            border: 1px solid #333;
+        }
+        .box4{
+            grid-area: box4;
+            border: 1px solid #333;
+        }
+        .box5{
+            grid-area: box5;
+            border: 1px solid #333;
+        }
+        .box6{
+            grid-area: box6;
+            border: 1px solid #333;
+        }
+        .box7{
+            grid-area: box7;
+            border: 1px solid #333;
+        }
+        .box8{
+            grid-area: box8;
+            border: 1px solid #333;
+        }
+        footer {
+            grid-area: foot;
+            background-color: #777;
+            font-size: 12px;
+            text-align: center;
+            font-style: bold;
+            height: 100px;
+            color: white;
+            left: 0;
+            right:0;
+            bottom:0;
+        }
+        .f1{list-style-type: none;
+          display:inline;
+          padding: 10px;
+         }
+}
