@@ -1,54 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Carnivore</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='ib_style.css'>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ib_style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 <body>
     <header>
-    <div class="hamburger">
-        
-        <!-- toggle -->
-        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
-        <input type="checkbox" id="nav-toggle">
-        <label class="nav-toggle" for="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <div class="hamburger">
+            <!-- toggle -->
+            <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+            </svg>
+            <input type="checkbox" id="nav-toggle" />
+            <label class="nav-toggle" for="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-        <!-- Offcanvas -->
-        
-        <nav class="menu">
-            <ul class="nav-list">
-                <li class="nav-list__item"><a href="#" title="Home">Home</a></li>
-                <li class="nav-list__item"><a href="#" title="About us">About Us</a></li>
-                <li class="nav-list__item"><a href="#" title="Contact Us">Contact Us</a></li>
-            
-            <!-- Shop/Submenus -->
-                <ul class="nav-list__item"><a href="#" title="shop">Shop</a>
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
+            <!-- Offcanvas -->
+
+            <nav class="menu">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#" title="Home">Home</a></li>
+                    <li class="nav-list__item">
+                        <a href="#" title="About us">About Us</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" title="Contact Us">Contact Us</a>
+                    </li>
+
+                    <!-- Shop/Submenus -->
+                    <ul class="nav-list__item">
+                        <a href="#" title="shop">Shop</a>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                        <li class="">3</li>
+                    </ul>
                 </ul>
-            </ul>
-        </nav>
-    </div>
+            </nav>
+        </div>
     </header>
-    <section>
-        
+
+    <main class="product-card">
+        <!-- Meat Image -->
+        <div class="left-column">
+            <img class="main-display" src="img/product detail-raw meat.jpg" alt="" />
+
+            <!--
+            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
+            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
+            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
+            -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Local Angus Beef</span>
+                <h1>399 kr/kg</h1>
+                <p>
+                    The preferred choice of a vast range of meat. Punchy, salty and
+                    tasty. Our meat is the perfect start to a hearty, comfort food meal. Just add your favorite
+                    seasonings and sauce for a delicious, low prep dinner.
+                </p>
+            </div>
+        </div>
+        <!-- Choose Weight -->
+        <div class="weight-select">
+            <div class="1kg">1kg</div>
+            <div class="2kg">2kg</div>
+            <div class="3kg"> 3kg</div>
+            <div class="offer">Offer</div>
+        </div>
+
+        <div class="detail">
+
+            <div class="product-detail">
+                <h1>Product detail</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="ingredients">
+                <h1>All Ingredients</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="weight-description">
+                <h1>Weight Description</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- <footer>
+                <li class="f1">Main Page</li>
+                <li class="f1">Privacy Policy</li>
+                <li class="f1">Categories</li>
+                <li class="f1">Contact Us</li>
+                </footer>
+                -->
 
 
-    <footer>
-        <li class="f1">Main Page</li>
-        <li class="f1">Privacy Policy</li>
-        <li class="f1">Categories</li>
-        <li class="f1">Contact Us</li>
-    </footer>
 </body>
+
+
+
+
 </html>
