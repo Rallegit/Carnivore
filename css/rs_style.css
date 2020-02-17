@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap');
+.gridcontainer{
+display:grid;
+width: 95%;
+height: auto;
+margin: 20px auto;
+grid-gap: 1% 1%;   
+grid-template-rows: repeat(9, minmax(300px, 1fr));
+grid-template-columns: 1fr;
+grid-template-areas: 
+'box1'
+'box2'
+'box3'
+'box4'
+'box5'
+'box6'
+'box7'
+'box8'
+'foot'
+;
+}
+body{background-color: gainsboro;}
+h1{text-align: center;}
+.flag{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left:0.5%;
+    margin-top:0.5%;
+}
+.flags{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.meat{
+    width: 100%;
+    height:auto;
+}
+.box1{
+    grid-area: box1;
+	border: 1px solid #333;
+}
+.box2{
+    grid-area: box2;
+	border: 1px solid #333;
+}
+.box3{
+    grid-area: box3;
+
+	border: 1px solid #333;
+}
+.box4{
+    grid-area: box4;
+	border: 1px solid #333;
+}
+.box5{
+    grid-area: box5;
+	border: 1px solid #333;
+}
+.box6{
+    grid-area: box6;
+	border: 1px solid #333;
+}
+.box7{
+    grid-area: box7;
+    border: 1px solid #333;
+}
+.box8{
+    grid-area: box8;
+    border: 1px solid #333;
+}
+.foots {
+    grid-area: foot;
+    background-color: #777;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    font-style: bold;
+    position: relative;
+    height: 100px;
+    color: white;
+    display:block;
+    left: 0;
+    right:0;
+    bottom:0;
+}
+.f1{list-style-type: none;
+  display:inline;
+  padding: 10px;
+ }
+
+        /* Tablett */
+        /* Tablett */
+        /* Tablett */ 
+@media only screen and (min-width: 768px) {
+    .gridcontainer{
+        display:grid;
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+        grid-gap: 1% 1.5%;
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'box1 box2 box3'
+        'box4 box5 box6'
+        'foot foot foot'
+        ;
+        }
+       .box1{
+            grid-area: box1;
+            border: 1px solid #333;
+        }
+        .box2{
+            grid-area: box2;
+            border: 1px solid #333;
+        }
+        .box3{
+            grid-area: box3;
+            border: 1px solid #333;
+        }
+        .box4{
+            grid-area: box4;
+            border: 1px solid #333;
+        }
+        .box5{
+            grid-area: box5;
+            border: 1px solid #333;
+        }
+        .box6{
+            grid-area: box6;
+            border: 1px solid #333;
+        }
+        .box7{
+            grid-area: box7;
+            border: 1px solid #333;
+            display:none;
+        }
+        .box8{
+            grid-area: box8;
+            border: 1px solid #333;
+            display:none;
+        }
+}
+
+        /* Tablett END */
+        /* Tablett END */
+        /* Tablett END */
+
+
+
+        /* Wide Desktop */
+        /* Wide Desktop */
+        /* Wide Desktop */ 
+
+@media only screen and (min-width: 1200px) {
+    
+    .gridcontainer{
+        display:grid;
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+        grid-gap: 1% 1.5%;
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        'box1 box2 box3 box4'
+        'box5 box6 box7 box8'
+        'foot foot foot foot'
+        ;
+        }
+        
+        .box1{
+            grid-area: box1;
+            border: 1px solid #333;
+        }
+        .box2{
+            grid-area: box2;
+            border: 1px solid #333;
+        }
+        .box3{
+            grid-area: box3;
+            border: 1px solid #333;
+        }
+        .box4{
+            grid-area: box4;
+            border: 1px solid #333;
+        }
+        .box5{
+            grid-area: box5;
+            border: 1px solid #333;
+        }
+        .box6{
+            grid-area: box6;
+            border: 1px solid #333;
+        }
+        .box7{
+            grid-area: box7;
+            border: 1px solid #333;
+            display:block;
+        }
+        .box8{
+            grid-area: box8;
+            border: 1px solid #333;
+            display:block;
+        }
+        .foots {
+            grid-area: foot; 
+            width: 100%;
+            background-color: #777;
+            font-size: 12px;
+            text-align: center;
+            height: 100px;
+            position: relative;
+            color: white;
+            display: block;
+            left: 0;
+            right:0;
+            bottom:0;
+        }
+        .f1{list-style-type: none;
+          display:inline;
+          padding: 10px;
+         }
+}
+        /* Wide Desktop END */ 
+        /* Wide Desktop END */ 
+        /* Wide Desktop END */ 
+

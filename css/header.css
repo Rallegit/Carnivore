@@ -14,7 +14,6 @@ header{
     
 }
   .hamburger{
-    font: 20px/200% Noto;sans-serif;
     overflow-x: hidden;
   } 
 
@@ -32,7 +31,7 @@ header{
     background: #222;
     padding: 15px;
     z-index: 2;
-    opacity:0.2;
+    opacity:0.55;
     /* add the animation*/
     transition: margin 0.8s;
   }
@@ -62,7 +61,7 @@ header{
   .nav-toggle span {
     position: relative;
     display: block;
-    height: 3px;
+    height: 5px;
     width: 40px;
     background: #8c784b;
     /* add the animation*/
@@ -70,10 +69,10 @@ header{
   }
   
   .nav-toggle span:nth-child(2) {
-    top: 12px;
+    top: 10px;
   }
   .nav-toggle span:nth-child(3) {
-    top: 24px;
+    top: 20px;
   }
   
   /* Toggle moving */
@@ -83,7 +82,7 @@ header{
   }
   
   input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
-    top: 12px;
+    top: 13px;
     transform: rotate(45deg);
   }
   
@@ -92,7 +91,7 @@ header{
   }
   
   input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
-    top: 10px;
+    top: 8px;
     transform: rotate(-45deg);
   }
   
@@ -123,16 +122,17 @@ header{
 
 footer {
     background-color: #777;
-    padding: 20px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-style: bold;
-    display: inline;
+    width:auto;
+    height: 60px;
     color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
     left: 0;
+    right:0;
+    bottom:0;
+
 }
 
 .f1{list-style-type: none;
@@ -141,22 +141,10 @@ footer {
  }
 
 
-/* Tablett */
-/* Tablett */
-/* Tablett */ 
-/* @media only screen and (min-width: 768px) {} */
-
-/* Small Desktop */
-/* Small Desktop */ 
-/* Small Desktop */
-/* @media only screen and (min-width: 960px) {} */
-
-
-
-/* Wide Desktop */
-/* Wide Desktop */
-/* Wide Desktop */ 
-@media only screen and (min-width: 1200px) {
+          /* Tablett */
+          /* Tablett */
+          /* Tablett */ 
+@media only screen and (min-width: 768px) {
   header{
     width: auto;
     height: 60px;
@@ -169,7 +157,7 @@ footer {
     ul {
       list-style: none;
     }
-    .nav-list{margin-top:50px;}
+    .nav-list{margin-top:75px;}
     /* The menu */
     .menu {
       width: 200px;
@@ -211,18 +199,18 @@ footer {
     .nav-toggle span {
       position: relative;
       display: block;
-      height: 3px;
+      height: 5px;
       width: 40px;
-      background:#8c784b;
+      background: #8c784b;
       /* add the animation*/
-      transition: all 0.3s;
+      transition: all 0.4s;
     }
     
     .nav-toggle span:nth-child(2) {
-      top: 12px;
+      top: 10px;
     }
     .nav-toggle span:nth-child(3) {
-      top: 24px;
+      top: 20px;
     }
     
     /* Toggle moving */
@@ -232,7 +220,7 @@ footer {
     }
     
     input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
-      top: 12px;
+      top: 13px;
       transform: rotate(45deg);
     }
     
@@ -241,7 +229,7 @@ footer {
     }
     
     input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
-      top: 10px;
+      top: 8px;
       transform: rotate(-45deg);
     }
     
@@ -255,6 +243,127 @@ footer {
     
     a {
       color: #fff;
+      width: 100%;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+  .cart{
+    position: fixed;
+    width:30px;
+    height:30px;
+    margin-left: 95%;
+    margin-top: 10px;
+  }
+}
+
+        /* Tablett END */
+        /* Tablett END */ 
+        /* Tablett END */
+
+
+        /* Wide Desktop */
+        /* Wide Desktop */
+        /* Wide Desktop */ 
+@media only screen and (min-width: 1200px) {
+  header{
+    width: auto;
+    height: 60px;
+    background-color: rgba(10, 10, 10, 0.1);  }
+    
+    .hamburger {
+      font: 20px/200% Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+    ul {
+      list-style: none;
+    }
+    .nav-list{margin-top:75px;}
+    /* The menu */
+    .menu {
+      width: 200px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      margin-left: -200px;
+      background: #222;
+      padding: 15px;
+      z-index: 2;
+      opacity: 0.9;
+      /* add the animation*/
+      transition: margin 0.3s;
+    }
+    
+    /* Hide the checkbox */
+    input[type="checkbox"] {
+      position: fixed;
+      right: -9999px;
+      opacity: 0;
+    }
+    
+    /* Toggle */
+    .nav-toggle {
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 0px;
+      height: 32px;
+      width: 40px;
+      cursor: pointer;
+      z-index: 99;
+      margin-left: 10px;
+      /* add the animation*/
+      transition: margin 0.3s;
+    }
+    
+    .nav-toggle span {
+      position: relative;
+      display: block;
+      height: 5px;
+      width: 40px;
+      background: #8c784b;
+      /* add the animation*/
+      transition: all 0.4s;
+    }
+    
+    .nav-toggle span:nth-child(2) {
+      top: 10px;
+    }
+    .nav-toggle span:nth-child(3) {
+      top: 20px;
+    }
+    
+    /* Toggle moving */
+    
+    input[type="checkbox"]:checked ~ .nav-toggle {
+      margin-left: 200px;
+    }
+    
+    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
+      top: 13px;
+      transform: rotate(45deg);
+    }
+    
+    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(2) {
+      display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
+      top: 8px;
+      transform: rotate(-45deg);
+    }
+    
+    input[type="checkbox"]:checked ~ .menu {
+      margin-left: 0px;
+    }
+    
+    input[type="checkbox"]:checked ~ section {
+      margin-left: 200px;
+    }
+    
+    a {
+      color: #8c784b;
       width: 100%;
       display: block;
       text-align: center;
@@ -290,7 +399,9 @@ footer {
   padding: 10px;
  }
 } 
-
+        /* Wide Desktop END */
+        /* Wide Desktop END */
+        /* Wide Desktop END */
 
 
 
