@@ -5,10 +5,9 @@ width: 95%;
 height: auto;
 margin: 20px auto;
 grid-gap: 1% 1%;   
-grid-template-rows: repeat(10, minmax(260px, 1fr));
+grid-template-rows: repeat(9, minmax(300px, 1fr));
 grid-template-columns: 1fr;
 grid-template-areas: 
-'head'
 'box1'
 'box2'
 'box3'
@@ -20,12 +19,15 @@ grid-template-areas:
 'foot'
 ;
 }
+body{background-color: gainsboro;}
+h1{text-align: center;}
 .flag{
+    position: absolute;
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    margin-left:1%;
-    margin-top:1%;
+    margin-left:0.5%;
+    margin-top:0.5%;
 }
 .flags{
     width: 40px;
@@ -34,14 +36,9 @@ grid-template-areas:
 }
 .meat{
     width: 100%;
-    height: 100%;
-}
-.head{
-    grid-area: head;
-	border: 1px solid #333;
+    height:auto;
 }
 .box1{
-    background: url("img/kobe.jpg");
     grid-area: box1;
 	border: 1px solid #333;
 }
@@ -104,10 +101,9 @@ grid-template-areas:
         height: auto;
         margin: 20px auto;
         grid-gap: 1% 1.5%;
-        grid-template-rows: repeat(3, minmax(260px, 1fr));
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-        'head head head'
         'box1 box2 box3'
         'box4 box5 box6'
         'foot foot foot'
@@ -140,10 +136,12 @@ grid-template-areas:
         .box7{
             grid-area: box7;
             border: 1px solid #333;
+            display:none;
         }
         .box8{
             grid-area: box8;
             border: 1px solid #333;
+            display:none;
         }
 }
 
@@ -165,16 +163,15 @@ grid-template-areas:
         height: auto;
         margin: 20px auto;
         grid-gap: 1% 1.5%;
-        grid-template-rows: repeat(3, minmax(260px, 1fr));
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
-        'head head head head'
         'box1 box2 box3 box4'
         'box5 box6 box7 box8'
         'foot foot foot foot'
         ;
         }
-
+        
         .box1{
             grid-area: box1;
             border: 1px solid #333;
@@ -202,10 +199,12 @@ grid-template-areas:
         .box7{
             grid-area: box7;
             border: 1px solid #333;
+            display:block;
         }
         .box8{
             grid-area: box8;
             border: 1px solid #333;
+            display:block;
         }
         .foots {
             grid-area: foot; 

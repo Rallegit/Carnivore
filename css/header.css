@@ -289,7 +289,7 @@ footer {
       background: #222;
       padding: 15px;
       z-index: 2;
-      opacity: 0.2;
+      opacity: 0.9;
       /* add the animation*/
       transition: margin 0.3s;
     }
@@ -362,7 +362,7 @@ footer {
     }
     
     a {
-      color: #fff;
+      color: #8c784b;
       width: 100%;
       display: block;
       text-align: center;
