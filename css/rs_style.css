@@ -19,7 +19,7 @@ grid-template-areas:
 'foot'
 ;
 }
-body{background-color: gainsboro;}
+body{background-color:}
 h1{text-align: center;}
 .flag{
     position: absolute;
@@ -90,6 +90,16 @@ h1{text-align: center;}
   display:inline;
   padding: 10px;
  }
+
+ button{
+    margin-left: 75%;
+    margin-top: 20%;
+    background-color: #8c784b;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+      }
+
 
         /* Tablett */
         /* Tablett */
@@ -175,6 +185,7 @@ h1{text-align: center;}
         .box1{
             grid-area: box1;
             border: 1px solid #333;
+            
         }
         .box2{
             grid-area: box2;
