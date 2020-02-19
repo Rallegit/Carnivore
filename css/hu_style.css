@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+}
+.hamburger{
+    margin-top: 0px;
+}
+}
+.fire{
+    z-index: -50;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.foots{
+    background-color: #777;
+    font-size: 12px;
+    text-align: center;
+    font-style: bold;
+    width:auto;
+    height: 60px;
+    color: white;
+    position: relative;
+    left: 0;
+    right:0;
+    bottom:0;
+    display: block;
+ }
