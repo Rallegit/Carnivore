@@ -10,7 +10,7 @@
 header{
     width: auto;
     height: 60px;
-    background-color: rgba(10, 10, 10, 0.2);  
+    background-color:rgba(10, 10, 10, 0.1); 
 }
   .hamburger{
     overflow-x: hidden;
