@@ -10,7 +10,21 @@
     <script src='main.js'></script>
 </head>
 <body>
-<body>
+    <div class="container">
+        <video muted playsinline loop autoplay height="93%" width="100%">
+            <source src="img/eld.mp4" type="video/mp4">
+            <source src="img/eld.mp4" type="video/ogg">
+        </video>
+        <div class="overlay">
+            <img src="img/logo.png" class="logo">
+            <form>
+                <p>Content Below Your Video</p>
+                <p><label for="input">Form Input Label</label>
+                <input id="input" name="input" value="" />
+                <button type="submit">Submit</button></p>
+            </form>
+        </div>
+    </div>  
     <header>
     <div class="hamburger">
         
@@ -41,15 +55,6 @@
         </nav>
     </div>
     </header>
-    <section>
-        <div class="video-main">
-        <video muted autoplay playsinline loop height="100%" width="100%" >
-            <source class="fire" src="img/eld.mp4" type="video/mp4">
-            <source src="img/eld.mp4" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-          </div>
-
 
     <footer class="foots">
         <li class="f1">Main Page</li>
@@ -57,8 +62,5 @@
         <li class="f1">Categories</li>
         <li class="f1">Contact Us</li>
     </footer >
-</body>
-</html>
-    
 </body>
 </html>
