@@ -65,83 +65,93 @@
       </div>
     </header>
 
-    <main class="product-card">
-      <!-- Meat Image -->
+    <main class="container">
+      <!-- Left Column / Headphones Image -->
       <div class="left-column">
+        <img data-image="black" src="img/product detail-raw meat.jpg" alt="" />
+        <img data-image="blue" src="img/product detail-raw meat.jpg" alt="" />
         <img
-          class="main-display"
+          data-image="red"
+          class="active"
           src="img/product detail-raw meat.jpg"
           alt=""
         />
-
-        <!--
-            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
-            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
-            <img class="list-item" src="img/product detail-raw meat.jpg" alt="">
-            -->
       </div>
 
       <!-- Right Column -->
       <div class="right-column">
         <!-- Product Description -->
         <div class="product-description">
-          <span>Local Angus Beef</span>
-          <h1>399 kr/kg</h1>
+          <span>Sweden</span>
+          <h1>Angus Beef</h1>
           <p>
-            The preferred choice of a vast range of meat. Punchy, salty and
-            tasty. Our meat is the perfect start to a hearty, comfort food meal.
-            Just add your favorite seasonings and sauce for a delicious, low
-            prep dinner.
-          </p>
-        </div>
-      </div>
-
-      <!-- Choose Weight -->
-      <div class="weight-select">
-        <h1>Choose Your Weight</h1>
-        <div class="1kg">1kg</div>
-        <div class="2kg">2kg</div>
-        <div class="3kg">3kg</div>
-        <div class="offer">Offer</div>
-      </div>
-
-      <div class="detail">
-        <div class="product-detail">
-          <h1>Product detail</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit.
+            The preferred choice of great range of meat. salty, good quality and
+            great taste. 
+            <p style="font-weight: bold; text-decoration:underline">Read More</p>
           </p>
         </div>
 
-        <div class="ingredients">
-          <h1>All Ingredients</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Choose your delivery</span>
+
+            <div class="color-choose">
+              <div>
+                <input
+                  data-image="red"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                  checked
+                />
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input
+                  data-image="blue"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input
+                  data-image="black"
+                  type="radio"
+                  id="black"
+                  name="color"
+                  value="black"
+                />
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weight -->
+          <div class="cable-config">
+            <span>Choose your weight</span>
+
+            <div class="weight-choose">
+              <button>1kg</button>
+              <button>5kg</button>
+              <button>10kg</button>
+              <button>More</button>
+            </div>
+
+            <a href="#">More about the meat, ingredients & weight</a>
+          </div>
         </div>
 
-        <div class="weight-description">
-          <h1>Weight Description</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>399kr/kg</span>
+          <a href="#" class="cart-btn">Add to cart</a>
         </div>
-      </div>
-
-      <!-- Related Meat -->
-      <div class="card">
-        <h2>Related Meat</h2>
-        <img src="img/product detail-raw meat.jpg" alt="meat" />
-        <h1>Angus Meat</h1>
-        <p class="price">299 kr/kg</p>
-        <p>
-          Some text about the meat. Super good and tasty lorem ipsum lorem
-          jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
       </div>
     </main>
 

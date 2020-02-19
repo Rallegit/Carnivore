@@ -3,185 +3,219 @@
   margin: 0;
 }
 
-/*
-.product-card {
-    padding: 15px;
-
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
 }
+
+/* Columns */
 .left-column {
-    width: auto;
-    position: relative;
+  width: 65%;
+  position: relative;
 }
 
 .right-column {
-    margin-top: 35vh;
+  width: 35%;
+  margin-top: 60px;
 }
-*/
 
-/* Left Side */
-.left-column .main-display {
-  width: 35vh;
-  margin-bottom: 5vh;
-  top: 5em;
-  left: 3em;
-  height: 22vh;
+/* Left Column */
+.left-column img {
+  width: 100%;
   position: absolute;
+  right: 3em;
+  top: 3em;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
-/*
-.list-item {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 18vh;
-    height: 12vh;
+.left-column img.active {
+  opacity: 1;
 }
-*/
+
+/* Right Column */
 
 /* Product Description */
 .product-description {
   border-bottom: 1px solid #e1e8ee;
-  margin-top: 34vh;
-  margin-top: 25vh;
-  text-align: center;
+  margin-bottom: 20px;
 }
-
 .product-description span {
-  clear: both;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 12px;
-  color: rgb(185, 148, 75);
+  color: #358ed7;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .product-description h1 {
   font-weight: 300;
-  font-size: 22px;
-  line-height: 2em;
-  color: #000;
+  font-size: 52px;
+  color: #43484d;
   letter-spacing: -2px;
 }
-
 .product-description p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   color: #000;
-  line-height: 2em;
-  text-align: center;
+  line-height: 24px;
 }
 
-/* Weight */
-
-.weight-select {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  text-align: center;
-  font-size: 10px;
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #86939e;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
-.weight-select > h1 {
-  white-space: nowrap;
-  font-size: 18px;
-  color: rgb(185, 148, 75);
+/* Product Color */
+.product-color {
+  margin-bottom: 30px;
 }
 
-.weight-select > div {
-  border: 0.5px solid black;
-  align-self: center;
-  justify-self: center;
-  margin: 0.5em;
-  padding: 1em 2em;
-  color: rgb(185, 148, 75);
-  grid-row-start: 2;
-  grid-row-end: 2;
+.color-choose div {
+  display: inline-block;
 }
 
-.weight-select > div:hover {
-  color: #d0d8ed;
-  background-color: black;
+.color-choose input[type="radio"] {
+  display: none;
 }
 
-/* Product detail */
-
-.detail {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 4em;
-  text-align: center;
-  font-weight: 300;
-  border-top: 1px solid #e1e8ee;
-}
-
-.detail h1 {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 2em;
-  color: #000;
-}
-
-.detail p {
-  font-size: 12px;
-  font-weight: 300;
-  color: #000;
-}
-
-/* Related Meat */
-
-.card {
-  text-align: center;
-  width: 25vh;
-  height: 15vh;
-  left: 7.5em;
-  position: absolute;
-  font-size: 12px;
-}
-.card h1 {
-  clear: both;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 12px;
-  color: rgb(185, 148, 75);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.card img {
-  border: 1px solid black;
-  width: 100%;
-}
-.card button {
-  line-height: 3em;
-  padding: 0 1em;
-  border: 1px solid black;
-  border-radius: 50px;
-  background-color: white;
-  color: black;
-  text-align: center;
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
   cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#red + label span {
+  background-color: rgb(185, 148, 75);
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: rgb(185, 148, 75);
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: rgb(185, 148, 75);
+}
+
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(images/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Cable Configuration */
+.weight-choose {
+  margin-bottom: 20px;
+}
+
+.weight-choose button {
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5e6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.weight-choose button:hover,
+.weight-choose button:active,
+.weight-choose button:focus {
+  border: 2px solid #86939e;
+  outline: none;
+}
+
+.cable-config {
+  border-bottom: 1px solid #e1e8ee;
+  margin-bottom: 20px;
+}
+
+.cable-config a {
+  color: #358ed7;
+  text-decoration: none;
   font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.cable-config a:before {
+  content: "?";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
 }
 
-/* Tablett */
-/* Tablett */
-/* Tablett */
-@media only screen and (min-width: 768px) {
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
 }
 
-/* Tablett END */
-/* Tablett END */
-/* Tablett END */
-
-/* Wide Desktop */
-/* Wide Desktop */
-/* Wide Desktop */
-@media only screen and (min-width: 1200px) {
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474d;
+  margin-right: 20px;
 }
 
-/* Wide Desktop END */
-/* Wide Desktop END */
-/* Wide Desktop END */
+.cart-btn {
+  display: inline-block;
+  background-color: rgb(185, 148, 75);
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  background-color: rgb(240, 232, 214);
+  color: rgb(142, 17, 17);
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -55px;
+  }
+}
