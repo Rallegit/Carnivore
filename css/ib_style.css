@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -62,62 +63,64 @@
 }
 
 /* Product Configuration */
-.product-color span,
-.cable-config span {
-  font-size: 14px;
-  font-weight: 400;
+.product-info span,
+.weight-config span {
+  font-size: 12px;
+  font-weight: lighter;
   color: #000;
   margin-bottom: 20px;
   display: inline-block;
+  font-family: "Lora", serif;
+  line-height: 2em;
 }
 
-/* Product Color */
-.product-color {
-  margin-bottom: 30px;
+/* Product info */
+.product-info {
+  margin-bottom: 10px;
 }
 
-.color-choose div {
+.weight-choose div {
   display: inline-block;
 }
 
-.color-choose input[type="radio"] {
+.weight-choose input[type="radio"] {
   display: none;
 }
 
-.color-choose input[type="radio"] + label span {
+.weight-choose input[type="radio"] + label span {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height: 10px;
   margin: -1px 4px 0 0;
   vertical-align: middle;
   cursor: pointer;
   border-radius: 50%;
 }
 
-.color-choose input[type="radio"] + label span {
-  border: 2px solid #ffffff;
+.weight-choose input[type="radio"] + label span {
+  border: 1px solid #ffffff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 }
 
-.color-choose input[type="radio"]#red + label span {
+.weight-choose input[type="radio"]#399kr/kg + label span {
   background-color: white;
 }
-.color-choose input[type="radio"]#blue + label span {
+.weight-choose input[type="radio"]#499kr/kg + label span {
   background-color: white;
 }
-.color-choose input[type="radio"]#black + label span {
+.weight-choose input[type="radio"]#599kr/kg + label span {
   background-color: white;
 }
 
-.color-choose input[type="radio"]:checked + label span {
+.weight-choose input[type="radio"]:checked + label span {
   background-image: url(images/check-icn.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Cable Configuration */
+/* weight Configuration */
 .weight-choose {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .weight-choose button {
@@ -138,12 +141,12 @@
   outline: none;
 }
 
-.cable-config {
+.weight-config {
   border-bottom: 1px solid #e1e8ee;
   margin-bottom: 20px;
 }
 
-.cable-config a {
+.weight-config a {
   color: #358ed7;
   text-decoration: none;
   font-size: 12px;
@@ -151,7 +154,7 @@
   margin: 10px 0;
   display: inline-block;
 }
-.cable-config a:before {
+.weight-config a:before {
   content: "?";
   height: 15px;
   width: 15px;
@@ -180,7 +183,7 @@
 .cart-btn {
   display: inline-block;
   background-color: rgb(185, 148, 75);
-  border-radius: 6px;
+  border-radius: 50px;
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
@@ -206,7 +209,7 @@
 
   .left-column img {
     width: 300px;
-    right: 0;
+    right: 8vh;
     top: -65px;
     left: initial;
   }
