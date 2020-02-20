@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+body {
+    background-color: white;
+}
+
+.product-checkout {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5em;
+    top: 6em;
+    padding: 5em;
+    max-width: 600px;
+    border: 1px solid black;
+
+}
+
+.bg {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    top: 1em;
+    right: 3em;
+    border-top: 1px solid grey;
+    border-width: thin;
+    padding: 1em;
+    text-align: center;
+}
+
+p::after {
+    content: ' \00D7';
+    font-size: 2em;
+    color: red;
+    position: relative;
+    bottom: 4em;
+    left: .5em;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 2em;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    border-top: 1px solid grey;
+}
+
+
+h1 {
+    line-height: 2em;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    width: 10em;
+    text-align: center;
+
+}
+
+p {
+    line-height: 1em;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form {
+    display: grid;
+    padding: 5em;
+    background: none;
+    border: 1px solid rgb(185, 148, 75);
+    margin: 2rem auto 0 2rem;
+    max-width: 600px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+
+
+form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+}
+
+form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+    font-family: 'Lora', serif;
+}
+
+form button:hover {
+    background: rgb(185, 148, 75)
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+    font-family: 'Lora', serif;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    outline: 3px solid gold;
+}
+
+@media (min-width: 400px) {
+    form {
+        grid-template-columns: 200px 1fr;
+        grid-gap: 16px;
+    }
+
+    label {
+        text-align: right;
+        grid-column: 1 / 2;
+    }
+
+    input,
+    button {
+        grid-column: 2 / 3;
+    }
+
+
+
+
+}
