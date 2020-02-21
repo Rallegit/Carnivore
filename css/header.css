@@ -102,9 +102,9 @@ header{
     margin-right: 200px;
   }
   a {
-    color: #8c784b;     
-    width: 100%;
-    display: block;
+    color: #8c784b;
+    padding: 10px;
+    display: inline;
     text-align: center;
     text-decoration: none;
   }
@@ -241,9 +241,9 @@ footer {
     }
     
     a {
-      color: #fff;
-      width: 100%;
-      display: block;
+      color: #8c784b;
+      padding: 10px;
+      display: inline;
       text-align: center;
       text-decoration: none;
     }
@@ -363,8 +363,8 @@ footer {
     
     a {
       color: #8c784b;
-      width: 100%;
-      display: block;
+      padding: 10px;
+      display: inline;
       text-align: center;
       text-decoration: none;
     }
@@ -385,7 +385,6 @@ footer {
     font-size: 14px;
     text-align: center;
     font-style: bold;
-    display: inline;
     color: white;
     position: absolute;
     right: 0;
@@ -393,7 +392,13 @@ footer {
     left: 0;
 }
 
-.f1{list-style-type: none;
+.f1{
+  list-style-type: none;
+  display:inline;
+  padding: 10px;
+ }
+ .f2{
+  list-style-type: none;
   display:inline;
   padding: 10px;
  }
