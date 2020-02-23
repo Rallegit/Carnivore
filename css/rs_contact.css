@@ -1,7 +1,6 @@
 .wrap {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000000;
     padding: 15px;
     width: auto;
     height: auto;
@@ -55,16 +54,17 @@
 }
 .btn{
 	display:block;
-	border:none;
 	background:#FFFFFF;
 	color:rgb(11,11,12);
 	padding:25px;
 	cursor:pointer;
 	text-decoration:none;
-	font-weight:bold;
+  font-weight:bold;
+  transition: 1s;
 }
 .btn:hover{
-	background-color:#8e1111;
+  background-color: #8e1111;
+	opacity: 1;
 }
 .foots {
     background-color:#0b0c0c;
@@ -91,6 +91,8 @@
     text-decoration: none;
   }
 
+  h2{font-size: 30px;text-align: center;}
+
 
 @media screen and (min-width: 1200px) {
 
@@ -98,7 +100,7 @@
     flex-direction: row;
     display: flex;
     align-items: center;
-    border: 1px solid #000000;
+    justify-content: center;
     padding: 15px;
   }
   .left {

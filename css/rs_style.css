@@ -158,8 +158,8 @@ button:hover{
               display:block;
               color: #8c784b;
            }
-           .f
-}
+          
+          }
         /* Tablett END */
         /* Tablett END */
         /* Tablett END */
@@ -292,7 +292,7 @@ button:hover{
         width: 95%;
         height: auto;
         margin: 20px auto;
-        grid-gap: 6% 1.5%;
+        grid-gap: 12% 1.5%;
         grid-template-rows: repeat(2, minmax(320px, 1fr));
         grid-template-columns: 1fr 7fr 7fr 7fr 7fr 1fr;
         grid-template-areas: 
@@ -343,19 +343,19 @@ button:hover{
                 top:0;
               }
               .box5:hover .overlay {
-                height: 45%;
+                height: 30%;
                 top:0;
               }
               .box6:hover .overlay {
-                height: 45%;
+                height: 30%;
                 top:0;
               }
               .box7:hover .overlay {
-                height: 45%;
+                height: 30%;
                 top:0;
               }
               .box8:hover .overlay {
-                height: 45%;
+                height: 30%;
                 top:0;
               }
             .inbox {
@@ -399,6 +399,8 @@ button:hover{
             .text{
                 position: absolute;
                 z-index:1;
+                width: auto;
+                height: 30px;
             }
             .meat{
               border-radius: 2%;
