@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/checkout.css" />
+
 </head>
 
 <body>
@@ -48,42 +49,64 @@
             </nav>
         </div>
     </header>
+    <div id="wrapper">
+        <div class="payment">
+            <div class="payment_product">
+                <div>
+                    <h2>Angus Meat</h2>
+                    <div class="price">
+                        399kr
+                    </div>
+                </div>
+            </div>
+            <div class="payment_bill">
+                <h3>Order Summary</h3>
+                <ul>
+                    <li>
+                        <span>399 x 1 item</span>
+                        <span>399.00 kr</span>
+                    </li>
+                    <li>
+                        <span>Discount</span>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <span>Subtotal</span>
+                        <span>399.00 kr</span>
+                    </li>
+                    <li>
+                        <span>Tax</span>
+                        <span>50kr</span>
+                    </li>
+                    <li>
+                        <span>Total</span>
+                        <span>389.00kr</span>
+                    </li>
+                </ul>
+                <hr>
+                <h3>Payment Detail</h3>
+                <form action="/" class="payment_form">
+                    <div class="form-input">
+                        <input type="text" placeholder="Card Number">
+                        <input type="email" placeholder="Email">
+                        <input type="adress" placeholder="Adress">
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <option>Month</option>
+                        </select>
+                        <select>
+                            <option>Year</option>
+                        </select>
+                        <input type="text" placeholder="CVC">
+                    </div>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
 
-
-    <form class="form1" action="">
-        <h2>Payment info</h2>
-        <label for="firstName" class="first-name">Full Name:</label>
-        <input id="firstName" type="text">
-
-        <label for="cardNumber" class="card-number">Card Number:</label>
-        <input id="cardNumber" type="text">
-
-        <label for="cvc">CVC:</label>
-        <input id="cvc" type="text">
-
-        <label for="expirationDate">Expiration Date:</label>
-        <input id="expirationDate" type="text">
-
-        <label for="adress">Adress:</label>
-        <input id="adress" type="text">
-
-        <label for="text">Email:</label>
-        <input id="email" type="email">
-
-        <button>Checkout</button>
-    </form>
-
-    <div class="product-checkout">
-        <h1>Order Summary</h1>
-        <img src="img/product detail-raw meat.jpg" class="bg" alt="meat">
-        <p>Total: 399kr</p>
-        <div class="price-info">
-            <span>Tax: 20%</span>
-            <span>Shipping: 0kr</span>
         </div>
-
-
     </div>
+
     <!--
     <footer>
         <li class="f1">Main Page</li>
@@ -94,6 +117,7 @@
 -->
 
     <script src="main.js">
+
     </script>
 </body>
 

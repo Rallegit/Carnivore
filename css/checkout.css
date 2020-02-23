@@ -1,134 +1,109 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
-body {
+* {
+    font-family: 'Lora';
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    background-color: #ffa000;
+
+}
+
+.payment {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.payment_product {
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    height: 100%;
+    background-color: red;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.95)), url("../img/product\ detail-raw\ meat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+    color: white;
+}
+
+.payment_bill {
+    padding: 40px;
+    height: 100%;
     background-color: white;
 }
 
-.product-checkout {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 5em;
-    top: 6em;
-    padding: 5em;
-    max-width: 600px;
-    border: 1px solid black;
-
-}
-
-.bg {
-    width: 10em;
-    height: 10em;
-    position: relative;
-    top: 1em;
-    right: 3em;
-    border-top: 1px solid grey;
-    border-width: thin;
-    padding: 1em;
-    text-align: center;
-}
-
-p::after {
-    content: ' \00D7';
-    font-size: 2em;
-    color: red;
-    position: relative;
-    bottom: 4em;
-    left: .5em;
-}
-
-.price-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    line-height: 2em;
-    font-family: 'Lora', serif;
-    font-size: 14px;
-    border-top: 1px solid grey;
-}
-
-
-h1 {
-    line-height: 2em;
-    font-family: 'Lora', serif;
-    font-size: 24px;
-    background-color: black;
+.price {
+    background-color: #ffa000;
     color: white;
-    border-radius: 1em;
-    width: 10em;
-    text-align: center;
-
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 2px;
 }
 
-p {
-    line-height: 1em;
-    font-family: 'Lora', serif;
-    font-size: 16px;
+h3 {
+    color: #ffa000;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    line-height: 2;
+    color: #666;
 }
 
-form {
+li:nth-last-child(1) {
+    color: #ffa000;
+}
+
+hr {
+    border-color: #ebeaea;
+    border-style: dashed;
+}
+
+.payment_form input,
+select {
+    border: none;
+    background-color: #e9ecec;
+    padding: 15px 10px;
+
+}
+
+.payment_form .form-input {
     display: grid;
-    padding: 5em;
-    background: none;
-    border: 1px solid rgb(185, 148, 75);
-    margin: 2rem auto 0 2rem;
-    max-width: 600px;
-    font-family: 'Lora', serif;
-    font-size: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 15px;
+    border-radius: 2px;
 }
 
 
-form input {
-    background: #fff;
-    border: 1px solid #9c9c9c;
-}
-
-form button {
-    background: lightgrey;
-    padding: 0.7em;
+.payment_form button {
     width: 100%;
-    border: 0;
-    font-family: 'Lora', serif;
-}
-
-form button:hover {
-    background: rgb(185, 148, 75)
-}
-
-label {
-    padding: 0.5em 0.5em 0.5em 0;
-    font-family: 'Lora', serif;
-}
-
-input {
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-}
-
-input:focus {
-    outline: 3px solid gold;
-}
-
-@media (min-width: 400px) {
-    form {
-        grid-template-columns: 200px 1fr;
-        grid-gap: 16px;
-    }
-
-    label {
-        text-align: right;
-        grid-column: 1 / 2;
-    }
-
-    input,
-    button {
-        grid-column: 2 / 3;
-    }
-
-
-
-
+    border: none;
+    background-color: #ffa000;
+    color: #fff;
+    margin: 10px 0;
+    padding: 15px 0;
+    font-size: 18px;
+    border-radius: 2px;
 }
