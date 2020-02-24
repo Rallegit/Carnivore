@@ -274,6 +274,20 @@ button:hover{
                 position: absolute;
                 z-index:99;
             }
+            .foots{            
+              background-color:#0b0c0c;
+              font-size: 12px;
+              text-align: center;
+              font-style: bold;
+              width:auto;
+              height: 60px;
+              position: absolute;
+              left: 0;
+              right:0;
+              bottom:0;
+              display:block;
+              color: #8c784b;
+           }   
             
         }
         /* Small Desktop END */
@@ -424,14 +438,7 @@ button:hover{
               bottom:0;
               display:block;
               color: #8c784b;
-           }
-           .f2{
-            list-style-type: none;
-            padding: 10px;
-            display:inline;
-           }
-          
-            
+           }            
 }
         /* Wide Desktop END */ 
         /* Wide Desktop END */ 
