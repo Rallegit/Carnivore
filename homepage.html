@@ -1,66 +1,86 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>CARNIVORE - HOMEPAGE</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/hu_style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="container">
-        <video muted playsinline loop autoplay height="93%" width="100%">
-            <source src="img/eld.mp4" type="video/mp4">
-            <source src="img/eld.mp4" type="video/ogg">
-        </video>
-        <div class="overlay">
-            <img src="img/logo.png" class="logo">
-            <form>
-                <p>Content Below Your Video</p>
-                <p><label for="input">Form Input Label</label>
-                <input id="input" name="input" value="" />
-                <button type="submit">Submit</button></p>
-            </form>
-        </div>
-    </div>  
-    <header>
-    <div class="hamburger">
+    <div class="parallax">
+        <div class="hamburger">
         
-        <!-- toggle -->
-        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
-        <input type="checkbox" id="nav-toggle">
-        <label class="nav-toggle" for="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <!-- Offcanvas -->
-        
-        <nav class="menu">
-            <ul class="nav-list">
-                <li class="nav-list__item"><a href="#" title="Home">Home</a></li>
-                <li class="nav-list__item"><a href="#" title="About us">About Us</a></li>
-                <li class="nav-list__item"><a href="#" title="Contact Us">Contact Us</a></li>
+            <!-- toggle -->
+            <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+            <input type="checkbox" id="nav-toggle">
+            <label class="nav-toggle" for="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <!-- Offcanvas -->
             
-            <!-- Shop/Submenus -->
-                <ul class="nav-list__item"><a href="#" title="shop">Shop</a>
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
+            <nav class="menu">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#" title="Home">Home</a></li>
+                    <li class="nav-list__item"><a href="#" title="About us">About Us</a></li>
+                    <li class="nav-list__item"><a href="#" title="Contact Us">Contact Us</a></li>
+                
+                <!-- Shop/Submenus -->
+                    <ul class="nav-list__item"><a href="#" title="shop">Shop</a>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                        <li class="">3</li>
+                    </ul>
                 </ul>
-            </ul>
-        </nav>
-    </div>
-    </header>
+            </nav>
+        </div>
+        <div class="container">
+        
+    
+            <div class="container-1">
+                <div class="box1">
+                    <h2> CARNIVORE </h2>
+                </div>
+                <div class="box2">
+                    <h1>Do we Deliver to you?</h1><br>
+                    <form>
+                        <input type="text" id="lname" name="lname" value="Zip code" class="zip" required><br><br>
+                        <button onclick="myFunction()" class="cart-btn">Find out</button>
+                    </form> 
+                </div>
+                <div class="box3">
+                    <p>Importer of world most exclusive beef, to your front door.</p>
+                </div>
+                <div class="box4">
+                    <a href="#about"><svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"><div class="arrow"></path><span style='font-size:4vh;'>&#8595;</span></div></svg></a>
+                   
+                </div>
+           </div>
+   
+        </div>
+        </div>
 
-    <footer class="foots">
+    </div>
+    <div class="grid">
+        <div class="about"><h3>About</h3></div>
+        <div class="info" id="about"><p>Carnivore nystartades 2009 i en liten köttbod på Kungsholmen vilken vi snabbt växte ur. Redan från början har målet varit att hålla personlig kontakt och kontroll av allt det vi levererar från gård och ända till bord, något som har varit mycket välkommet för privatpersoner inom hela stor-Stockholm.</p>
+        </div>
+        <div class="cow"><img src="img/cow.jpg" class="cow-pic"></div>
+        <br><br>
+
+        
+   </div>
+    <footer class="footer">
         <li class="f1">Main Page</li>
         <li class="f1">Privacy Policy</li>
         <li class="f1">Categories</li>
         <li class="f1">Contact Us</li>
-    </footer >
+    </footer>
+
 </body>
 </html>

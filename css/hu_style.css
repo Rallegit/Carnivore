@@ -1,57 +1,155 @@
-body{
-    background-color:rgb(11,12,12);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap');
+body, html {
+    height: 100%;
+    text-shadow: darkred 1px 1px;
+  }
+  
+  .parallax {
+    background-image: url('img/steak.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  .container{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+  }
+  .container-1{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse; /*stylar hur boxes visas i column.*/
+    align-items:center; /*stylar hur box börjar*/
+    justify-content: center;
+    
+    
+    
 }
-.hamburger{
-    margin-top: 0px;
+  /*styling för alla divar i parent "container-1"*/
+  .container-1 div {
+    position:absolute;
+  
+  }
+  
+  .box1{
+  
+  margin-top: 30vh;
+  margin-left: auto;
+  flex: 1;
+  order:1;
+  font-size: 8vw;
+  color: goldenrod;
+  z-index: 5;
+} 
+  .box2{
+    flex: 1;
+    order:2;
+    margin-top: 60vh;
+    margin-left: auto;
+    color: goldenrod;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 8;
+}
+.box3{
+  margin-top: 80vh;
+  margin-left: auto;
+  flex: 1;
+  order:3;
+  font-size: 2vw;
+  color: white;
+  z-index: 5;
+}
+.box3{
+  margin-top: 80vh;
+  margin-left: auto;
+  flex: 1;
+  order:3;
+  font-size: 2vw;
+  color: white;
+  z-index: 5;
+  text-shadow: black;
+}
+.zip{
+  background-color: rgba(95, 93, 93, 0.8 );
+  box-shadow: darkblackred;
+  color: goldenrod;
+  text-decoration: black;
+  
+}
+.cart-btn {
+  display: inline-block;
+  background-color: rgb(185, 148, 75);
+  border-radius: 50px;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all 0.5s;
+  border: none;
+}
+.cart-btn:hover {
+  background-color: rgb(240, 232, 214);
+  color: rgb(142, 17, 17);
+}
+.blurp--top{
+margin-top: 196vh;
+}
+.arrow{
+  margin-top: -8vh;
+  margin-left: 10.5vh;
+  text-decoration: none;
+  text-shadow: none;;
+  color: black;
+  cursor: pointer;
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 6fr);
+  grid-template-rows: 3fr;
+  grid-gap: 20px;
+
+}
+.grid div{
+  border: none;
+}
+.about {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 13vh;
+  font-weight: lighter;
+  text-align: center;
+  text-shadow: none;
+  grid-column: span 6;
+  
+}
+.info {
+  font-size: 2vh;
+  font-family: 'Open Sans';
+  font-style: italic;
+  text-align: center;
+  text-shadow: none;
+  font-style: italic;
+  grid-column: 2 / span 4;
+}
+.cow {
+  grid-column: span 6;
+  justify-self: center;
+}
+.cow-pic {
+  width: auto;
+  height: 30vh;
+}
+.footer{
+  position: sticky;
+  margin-bottom: 0;
+  width: 100vw;
+  text-shadow: none;
 }
 
-.fire{
-    z-index: -1;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-.foots{
-    background-color: #777;
-    font-size: 12px;
-    text-align: center;
-    font-style: bold;
-    width:auto;
-    height: 60px;
-    color: white;
-    position: relative;
-    left: 0;
-    right:0;
-    bottom:0;
-    display: block;
- }
-.container { position:relative; 
-    display: grid;
-}
-.container video {
-    position:relative;
-    z-index:0;
-}
-.overlay {
-    position:absolute;
-    background-color: #777;
-    width: 70%;
-    top:0vh;
-    left:10vw;
-    z-index:1;
-    padding: 5px;
-}
-h1{
-    text-align: center;
-    color: goldenrod;
-}
-p{
-    color: goldenrod;
-}
-.logo{
-    position: relative;
-    z-index: 2;
-    padding-left: 30%;
-    width: 60%;
-    height: auto;
-}
