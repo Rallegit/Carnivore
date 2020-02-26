@@ -19,6 +19,13 @@ header{
   ul {
     list-style: none;
   }
+.nav-list li {
+  margin-left:35vw;
+  padding-top: 20px;
+}
+
+.a2{font-size:20px;}
+
   /* The menu */
   .menu {
     width: 100%;
@@ -30,11 +37,11 @@ header{
     background: #222;
     padding: 15px;
     z-index: 2;
-    opacity:0.55;
+    opacity:0.85;
     /* add the animation*/
     transition: margin 0.8s;
   }
-  .nav-list{margin-top: 50px;}
+  .nav-list{margin-top: 100px;}
   /* Hide the checkbox */
   input[type="checkbox"] {
     position: fixed;
@@ -62,7 +69,7 @@ header{
     display: block;
     height: 5px;
     width: 40px;
-    background: #8c784b;
+    background: goldenrod;
     /* add the animation*/
     transition: all 0.4s;
   }
@@ -102,7 +109,7 @@ header{
     margin-right: 200px;
   }
   a {
-    color: #8c784b;
+    color: goldenrod;
     padding: 10px;
     display: inline;
     text-align: center;
@@ -127,7 +134,7 @@ footer {
     width:auto;
     height: 60px;
     color: white;
-    position: relative;
+    position: absolute;
     left: 0;
     right:0;
     bottom:0;
@@ -156,6 +163,9 @@ footer {
     ul {
       list-style: none;
     }
+    .nav-list li {
+      margin-left:0vw;
+    }
     .nav-list{margin-top:75px;}
     /* The menu */
     .menu {
@@ -168,7 +178,7 @@ footer {
       background: #222;
       padding: 15px;
       z-index: 2;
-      opacity: 0.2;
+      opacity: 1;
       /* add the animation*/
       transition: margin 0.3s;
     }
@@ -200,7 +210,7 @@ footer {
       display: block;
       height: 5px;
       width: 40px;
-      background: #8c784b;
+      background: goldenrod;
       /* add the animation*/
       transition: all 0.4s;
     }
@@ -241,7 +251,7 @@ footer {
     }
     
     a {
-      color: #8c784b;
+      color: goldenrod;
       padding: 10px;
       display: inline;
       text-align: center;
@@ -277,7 +287,10 @@ footer {
     ul {
       list-style: none;
     }
-    .nav-list{margin-top:75px;}
+    .nav-list li {
+      margin-left:0vw;
+    }
+    .nav-list{margin-top:50px;}
     /* The menu */
     .menu {
       width: 200px;
@@ -289,7 +302,7 @@ footer {
       background: #222;
       padding: 15px;
       z-index: 2;
-      opacity: 0.9;
+      opacity: 1;
       /* add the animation*/
       transition: margin 0.3s;
     }
@@ -321,7 +334,7 @@ footer {
       display: block;
       height: 5px;
       width: 40px;
-      background: #8c784b;
+      background: goldenrod;
       /* add the animation*/
       transition: all 0.4s;
     }
@@ -362,7 +375,7 @@ footer {
     }
     
     a {
-      color: #8c784b;
+      color: goldenrod;
       padding: 10px;
       display: inline;
       text-align: center;
@@ -379,30 +392,27 @@ footer {
   /* Footer */
   /* Footer */
 
-footer {
-    background-color: #777;
-    padding: 20px;
-    font-size: 14px;
+  .footer{
+    background-color:#0b0c0c;
+    font-size: 12px;
     text-align: center;
     font-style: bold;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    width:auto;
+    height: 60px;
+    position: relative;
     left: 0;
-}
+    right:0;
+    bottom:0;
+    display: block;
+    color: #8c784b;
+ } 
 
 .f1{
   list-style-type: none;
   display:inline;
   padding: 10px;
  }
- .f2{
-  list-style-type: none;
-  display:inline;
-  padding: 10px;
- }
-} 
+}
         /* Wide Desktop END */
         /* Wide Desktop END */
         /* Wide Desktop END */
