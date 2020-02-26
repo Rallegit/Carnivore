@@ -117,6 +117,7 @@ header{
     text-decoration: none;
   }
   .cart{
+    position: fixed;
     width:30px;
     height:30px;
     margin-left: 88%;
