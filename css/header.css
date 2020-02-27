@@ -13,6 +13,7 @@ header{
     background-color:rgba(10, 10, 10, 0.1); 
 }
   .hamburger{
+    z-index: 99;
     overflow-x: hidden;
   } 
 
@@ -126,20 +127,21 @@ header{
   /* Footer */
   /* Footer */
 
-footer {
-    background-color: #777;
+  .footer{
+    background-color:#0b0c0c;
     font-size: 12px;
     text-align: center;
     font-style: bold;
     width:auto;
     height: 60px;
-    color: white;
-    position: absolute;
+    position: relative;
     left: 0;
     right:0;
     bottom:0;
+    display: block;
+    color: #8c784b;
+ } 
 
-}
 
 .f1{list-style-type: none;
   display:inline;
@@ -264,6 +266,20 @@ footer {
     margin-left: 95%;
     margin-top: 10px;
   }
+  .footer{
+    background-color:#0b0c0c;
+    font-size: 12px;
+    text-align: center;
+    font-style: bold;
+    width:auto;
+    height: 60px;
+    position: relative;
+    left: 0;
+    right:0;
+    bottom:0;
+    display: block;
+    color: #8c784b;
+ } 
 }
 
         /* Tablett END */
