@@ -1,88 +1,100 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap');
-body, html {
-    height: 100%;
-    text-shadow: darkred 1px 1px;
-  }
-  
-  .parallax {
-    background-image: url('../img/steak.jpg');
-    height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-  }
-  .container{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    
-  }
-  .container-1{
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse; /*stylar hur boxes visas i column.*/
-    align-items:center; /*stylar hur box börjar*/
-    justify-content: center;
-    
-    
-    
+
+body,
+html {
+  height: 100%;
+  text-shadow: darkred 1px 1px;
 }
-  /*styling för alla divar i parent "container-1"*/
-  .container-1 div {
-    position:absolute;
-  
-  }
-  
-  .box1{
-  
+
+.parallax {
+  background-image: url('../img/steak.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  /*stylar hur boxes visas i column.*/
+  align-items: center;
+  /*stylar hur box börjar*/
+  justify-content: center;
+
+
+
+}
+
+/*styling för alla divar i parent "container-1"*/
+.container-1 div {
+  position: absolute;
+
+
+}
+
+.box1 {
+
   margin-top: 30vh;
   margin-left: auto;
   flex: 1;
-  order:1;
+  order: 1;
   font-size: 8vw;
   color: goldenrod;
   z-index: 1;
-} 
-  .box2{
-    flex: 1;
-    order:2;
-    margin-top: 60vh;
-    margin-left: auto;
-    color: goldenrod;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 8;
 }
-.box3{
+
+.box2 {
+  flex: 1;
+  order: 2;
+  margin-top: 60vh;
+  margin-left: auto;
+  color: goldenrod;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 8;
+}
+
+.box3 {
   margin-top: 80vh;
   margin-left: auto;
   flex: 1;
-  order:3;
+  order: 3;
   font-size: 2vw;
   color: white;
   z-index: 5;
 }
-.box4{
+
+.box4 {
   margin-top: 80vh;
   margin-left: auto;
   flex: 1;
-  order:3;
+  order: 3;
   font-size: 2vw;
-  border:none;
+  border: none;
   z-index: 5;
   text-shadow: black;
 }
-.zip{
-  background-color: rgba(95, 93, 93, 0.8 );
-  
+
+.zip {
+  background-color: rgba(95, 93, 93, 0.8);
+
   color: goldenrod;
   text-decoration: black;
-  
+
 }
+
 .cart-btn {
   display: inline-block;
   background-color: rgb(185, 148, 75);
@@ -93,22 +105,27 @@ body, html {
   transition: all 0.5s;
   border: none;
 }
+
 .cart-btn:hover {
   background-color: rgb(240, 232, 214);
   color: rgb(142, 17, 17);
 }
-.blurp--top{
-margin-top: 27vh;
+
+.blurp--top {
+  margin-top: 27vh;
 }
-.arrow{
+
+.arrow {
   margin-top: -12vh;
   margin-left: 11.5vh;
   text-decoration: none;
-  text-shadow: none;;
+  text-shadow: none;
+  ;
   color: black;
   cursor: pointer;
 
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -116,9 +133,11 @@ margin-top: 27vh;
   grid-gap: 20px;
   margin-bottom: 30px;
 }
-.grid div{
+
+.grid div {
   border: none;
 }
+
 .about {
   font-family: 'Open Sans';
   font-style: italic;
@@ -127,8 +146,9 @@ margin-top: 27vh;
   text-align: center;
   text-shadow: none;
   grid-column: span 12;
-  
+
 }
+
 .info {
   font-size: 2vh;
   font-family: 'Open Sans';
@@ -138,81 +158,91 @@ margin-top: 27vh;
   font-style: italic;
   grid-column: 2 / span 4;
 }
+
 .cow {
   grid-column: span 6;
   justify-self: center;
 }
+
 .cow-pic {
   width: auto;
   height: 30vh;
 }
-.rating{
+
+.rating {
   grid-column: 3 / span 4;
   grid-row: 4;
   text-shadow: none;
 }
-.rating2{
+
+.rating2 {
   grid-column: 6 / span 4;
   grid-row: 4;
   text-shadow: none;
 }
-.rating3{
+
+.rating3 {
   grid-column: 9 / span 4;
   grid-row: 4;
   margin-left: 5px;
   text-shadow: none;
 }
 
-p{
-  
-}
-.footer{
-  background-color:#0b0c0c;
+p {}
+
+.footer {
+  background-color: #0b0c0c;
   font-size: 12px;
   text-align: center;
   font-style: bold;
-  width:auto;
+  width: auto;
   height: 60px;
   position: relative;
   left: 0;
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   display: block;
   color: goldenrod;
 }
 
 
 /* Mindre Desktop storlek mellan: 960px-1199px */
-@media only screen and (min-width: 960px) and (max-width: 1199px){
-  .blurp--top{
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .blurp--top {
     margin-top: 26vh;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .blurp--top{
+  .blurp--top {
     margin-top: 30vh;
   }
-  .arrow{
+
+  .arrow {
     margin-left: 46%;
-    margin-top:-30%;
+    margin-top: -30%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 959px)  {
-  .blurp--top{
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .blurp--top {
     margin-top: 24vh;
   }
-  .arrow{
+
+  .arrow {
     margin-top: -10vh;
-    margin-left:47%;
+    margin-left: 47%;
   }
 }
+
 @media only screen and (min-width: 1200px) {
-  .blurp--top{
-    height:100px;
+  .blurp--top {
+    height: 100px;
     width: auto;
     margin-top: 28vh;
   }
-  .arrow{
+
+  .arrow {
     margin-left: 46%;
   }
 }

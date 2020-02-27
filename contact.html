@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="author" content="Rasmus Södergren">
     <meta charset='utf-8'>
@@ -9,54 +10,82 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/rs_contact.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
 </head>
+
 <body>
     <header>
-        
+
         <div class="hamburger">
             <h3>Carnivore</h3>
             <!-- toggle -->
-            <a href="checkout.html"> <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/> </svg> </a>
-            <input type="checkbox" id="nav-toggle">
-            <label class="nav-toggle" for="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-    
-            <!-- Offcanvas -->
-            
-            <nav class="menu">
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a class="a2" href="homepage.html" title="Home">Home</a></li>
-                    <li class="nav-list__item"><a class="a2" href="productpage.html" title="Product Page">Product Page</a></li>
-                    <li class="nav-list__item"><a class="a2" href="detailpage.html" title="Detail page">Detail Page</a></li>
-                </ul>
-            </nav>
+            <div class="dropdown">
+                <a href="checkout.html"> <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                    </svg>
+                    <div class="dropdown-content">
+                        <span class="lighter-text">Total:</span>
+                        <span class="main-color-text">399kr</span>
+                        <ul class="shopping-cart-items">
+                            <li class="clearfix">
+                                <span class="item-name">Kobe Beef</span>
+                                <span class="item-quantity">Quantity: 1</span>
+                                <img src="img/product detail-raw meat.jpg" style="width: 100px;" alt="item1" />
+                            </li>
+                    </div>
+            </div>
+            </a>
+        </div> <input type="checkbox" id="nav-toggle">
+        <label class="nav-toggle" for="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Offcanvas -->
+
+        <nav class="menu">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a class="a2" href="homepage.html" title="Home">Home</a></li>
+                <li class="nav-list__item"><a class="a2" href="productpage.html" title="Product Page">Product Page</a>
+                </li>
+                <li class="nav-list__item"><a class="a2" href="detailpage.html" title="Detail page">Detail Page</a></li>
+            </ul>
+        </nav>
         </div>
-        </header>
-        <div class="wrap">
-            <div class="left">
-              <div class="main-content">
+    </header>
+    <div class="wrap">
+        <div class="left">
+            <div class="main-content">
                 <h2>FAQ</h2>
                 <p>What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              </div>
-              <div class="other-content">
-                  <p>What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<span></span></p>
-                    What is Lorem Ipsum?
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
             </div>
-            <div class="sidebar">
-                 <div class="topdiv">
-                    <h1>Get In Touch</h1>	
-                 </header>
-                
+            <div class="other-content">
+                <p>What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.<span></span></p>
+                What is Lorem Ipsum?
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="topdiv">
+                <h1>Get In Touch</h1>
+                </header>
+
                 <div class="wrapper">
-        
+
                     <div class="howlong">
-                    
+
                         <input class="formstyle" type="text" placeholder="Full Name" required>
                     </div>
                     <div class="howlong">
@@ -65,7 +94,7 @@
                     <div class="howlong">
                         <input class="formstyle" type="text" placeholder="Phone">
                     </div>
-                     <div class="howlong">
+                    <div class="howlong">
                         <input class="formstyle" type="text" placeholder="Subject" required>
                     </div>
                     <div class="howlong">
@@ -75,22 +104,23 @@
                         <input class="btn" type="submit" value="Submit">
                     </div>
                     </form>
-                    
+
                 </div>
-                
+
 
             </div>
-            
-          </div>
-          
-          <footer class="foots">
+
+        </div>
+
+        <footer class="foots">
             <li class="f1">
                 <a href="homepage.html">Main Page</a>
                 <a href="#">Privacy Policy</a>
                 <a href="checkout.html">Checkout Page</a>
                 <a href="contact.html">Contact Us</a>
-                </li>
-          </footer>
+            </li>
+        </footer>
 
-        </body>
-        </html>
+</body>
+
+</html>

@@ -1,55 +1,246 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Noto Serif', serif;
 }
+
 /* Header */
 
-header{
+header {
+  width: auto;
+  height: 60px;
+  background-color: rgba(10, 10, 10, 0.1);
+}
+
+.hamburger {
+  z-index: 99;
+  overflow-x: hidden;
+}
+
+.dropdown-content {
+  margin: auto;
+  width: 80%;
+}
+
+.dropdown-content {
+  margin: 20px 0;
+  float: right;
+  background: gray;
+  opacity: .9;
+  width: 250px;
+  position: relative;
+  border-radius: 3px;
+  padding: 0;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 1;
+
+
+
+}
+
+
+ul {
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 35vw;
+  padding-top: 20px;
+}
+
+.a2 {
+  font-size: 20px;
+}
+
+/* The menu */
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-left: -800px;
+  background: #222;
+  padding: 15px;
+  z-index: 2;
+  opacity: 0.85;
+  /* add the animation*/
+  transition: margin 0.8s;
+}
+
+.nav-list {
+  margin-top: 100px;
+}
+
+/* Hide the checkbox */
+input[type="checkbox"] {
+  position: fixed;
+  left: -9999px;
+  opacity: 0;
+}
+
+/* Toggle */
+.nav-toggle {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  height: 32px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 99;
+  margin-left: 2%;
+  /* add the animation*/
+  transition: margin 0.3s;
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 40px;
+  background: goldenrod;
+  /* add the animation*/
+  transition: all 0.4s;
+}
+
+.nav-toggle span:nth-child(2) {
+  top: 10px;
+}
+
+.nav-toggle span:nth-child(3) {
+  top: 20px;
+}
+
+/* Toggle moving */
+
+input[type="checkbox"]:checked~.nav-toggle {
+  margin-right: 200px;
+}
+
+input[type="checkbox"]:checked~.nav-toggle span:nth-child(1) {
+  top: 13px;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked~.nav-toggle span:nth-child(2) {
+  display: none;
+}
+
+input[type="checkbox"]:checked~.nav-toggle span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked~.menu {
+  margin-left: 0px;
+}
+
+input[type="checkbox"]:checked~section {
+  margin-right: 200px;
+}
+
+a {
+  color: goldenrod;
+  padding: 10px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cart {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin-left: 88%;
+  margin-top: 10px;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+
+.footer {
+  background-color: #0b0c0c;
+  font-size: 12px;
+  text-align: center;
+  font-style: bold;
+  width: auto;
+  height: 60px;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  color: #8c784b;
+}
+
+
+.f1 {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+
+
+/* Tablett */
+/* Tablett */
+/* Tablett */
+@media only screen and (min-width: 768px) {
+  header {
     width: auto;
     height: 60px;
-    background-color:rgba(10, 10, 10, 0.1); 
-}
-  .hamburger{
-    z-index: 99;
+    background-color: rgba(10, 10, 10, 0.1);
+  }
+
+  .hamburger {
+    font: 20px/200% Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-  } 
+  }
 
   ul {
     list-style: none;
   }
-.nav-list li {
-  margin-left:35vw;
-  padding-top: 20px;
-}
 
-.a2{font-size:20px;}
+  .nav-list li {
+    margin-left: 0vw;
+  }
+
+  .nav-list {
+    margin-top: 75px;
+  }
 
   /* The menu */
   .menu {
-    width: 100%;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    margin-left: -800px;
+    margin-left: -200px;
     background: #222;
     padding: 15px;
     z-index: 2;
-    opacity:0.85;
+    opacity: 1;
     /* add the animation*/
-    transition: margin 0.8s;
+    transition: margin 0.3s;
   }
-  .nav-list{margin-top: 100px;}
+
   /* Hide the checkbox */
   input[type="checkbox"] {
     position: fixed;
-    left: -9999px;
+    right: -9999px;
     opacity: 0;
   }
-  
+
   /* Toggle */
   .nav-toggle {
     display: block;
@@ -60,11 +251,11 @@ header{
     width: 40px;
     cursor: pointer;
     z-index: 99;
-    margin-left: 2%;
+    margin-left: 10px;
     /* add the animation*/
     transition: margin 0.3s;
   }
-  
+
   .nav-toggle span {
     position: relative;
     display: block;
@@ -74,41 +265,43 @@ header{
     /* add the animation*/
     transition: all 0.4s;
   }
-  
+
   .nav-toggle span:nth-child(2) {
     top: 10px;
   }
+
   .nav-toggle span:nth-child(3) {
     top: 20px;
   }
-  
+
   /* Toggle moving */
-  
-  input[type="checkbox"]:checked ~ .nav-toggle {
-    margin-right: 200px;
+
+  input[type="checkbox"]:checked~.nav-toggle {
+    margin-left: 200px;
   }
-  
-  input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(1) {
     top: 13px;
     transform: rotate(45deg);
   }
-  
-  input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(2) {
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(2) {
     display: none;
   }
-  
-  input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(3) {
     top: 8px;
     transform: rotate(-45deg);
   }
-  
-  input[type="checkbox"]:checked ~ .menu {
+
+  input[type="checkbox"]:checked~.menu {
     margin-left: 0px;
   }
-  
-  input[type="checkbox"]:checked ~ section {
-    margin-right: 200px;
+
+  input[type="checkbox"]:checked~section {
+    margin-left: 200px;
   }
+
   a {
     color: goldenrod;
     padding: 10px;
@@ -116,322 +309,189 @@ header{
     text-align: center;
     text-decoration: none;
   }
-  .cart{
+
+  .cart {
     position: fixed;
-    width:30px;
-    height:30px;
-    margin-left: 88%;
-    margin-top: 10px;
-  }
-  /* Footer */
-  /* Footer */
-  /* Footer */
-
-  .footer{
-    background-color:#0b0c0c;
-    font-size: 12px;
-    text-align: center;
-    font-style: bold;
-    width:auto;
-    height: 60px;
-    position: relative;
-    left: 0;
-    right:0;
-    bottom:0;
-    display: block;
-    color: #8c784b;
- } 
-
-
-.f1{list-style-type: none;
-  display:inline;
-  padding: 10px;
- }
-
-
-          /* Tablett */
-          /* Tablett */
-          /* Tablett */ 
-@media only screen and (min-width: 768px) {
-  header{
-    width: auto;
-    height: 60px;
-    background-color: rgba(10, 10, 10, 0.1);  }
-    
-    .hamburger {
-      font: 20px/200% Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-    }
-    ul {
-      list-style: none;
-    }
-    .nav-list li {
-      margin-left:0vw;
-    }
-    .nav-list{margin-top:75px;}
-    /* The menu */
-    .menu {
-      width: 200px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      margin-left: -200px;
-      background: #222;
-      padding: 15px;
-      z-index: 2;
-      opacity: 1;
-      /* add the animation*/
-      transition: margin 0.3s;
-    }
-    
-    /* Hide the checkbox */
-    input[type="checkbox"] {
-      position: fixed;
-      right: -9999px;
-      opacity: 0;
-    }
-    
-    /* Toggle */
-    .nav-toggle {
-      display: block;
-      position: fixed;
-      top: 10px;
-      left: 0px;
-      height: 32px;
-      width: 40px;
-      cursor: pointer;
-      z-index: 99;
-      margin-left: 10px;
-      /* add the animation*/
-      transition: margin 0.3s;
-    }
-    
-    .nav-toggle span {
-      position: relative;
-      display: block;
-      height: 5px;
-      width: 40px;
-      background: goldenrod;
-      /* add the animation*/
-      transition: all 0.4s;
-    }
-    
-    .nav-toggle span:nth-child(2) {
-      top: 10px;
-    }
-    .nav-toggle span:nth-child(3) {
-      top: 20px;
-    }
-    
-    /* Toggle moving */
-    
-    input[type="checkbox"]:checked ~ .nav-toggle {
-      margin-left: 200px;
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
-      top: 13px;
-      transform: rotate(45deg);
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(2) {
-      display: none;
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
-      top: 8px;
-      transform: rotate(-45deg);
-    }
-    
-    input[type="checkbox"]:checked ~ .menu {
-      margin-left: 0px;
-    }
-    
-    input[type="checkbox"]:checked ~ section {
-      margin-left: 200px;
-    }
-    
-    a {
-      color: goldenrod;
-      padding: 10px;
-      display: inline;
-      text-align: center;
-      text-decoration: none;
-    }
-  .cart{
-    position: fixed;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     margin-left: 95%;
     margin-top: 10px;
   }
-  .footer{
-    background-color:#0b0c0c;
+
+  .footer {
+    background-color: #0b0c0c;
     font-size: 12px;
     text-align: center;
     font-style: bold;
-    width:auto;
+    width: auto;
     height: 60px;
     position: relative;
     left: 0;
-    right:0;
-    bottom:0;
+    right: 0;
+    bottom: 0;
     display: block;
     color: #8c784b;
- } 
+  }
 }
 
-        /* Tablett END */
-        /* Tablett END */ 
-        /* Tablett END */
+/* Tablett END */
+/* Tablett END */
+/* Tablett END */
 
 
-        /* Wide Desktop */
-        /* Wide Desktop */
-        /* Wide Desktop */ 
+/* Wide Desktop */
+/* Wide Desktop */
+/* Wide Desktop */
 @media only screen and (min-width: 1200px) {
-  header{
+  header {
     width: auto;
     height: 60px;
-    background-color: rgba(10, 10, 10, 0.1);  }
-    
-    .hamburger {
-      font: 20px/200% Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-    }
-    ul {
-      list-style: none;
-    }
-    .nav-list li {
-      margin-left:0vw;
-    }
-    .nav-list{margin-top:50px;}
-    /* The menu */
-    .menu {
-      width: 200px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      margin-left: -200px;
-      background: #222;
-      padding: 15px;
-      z-index: 2;
-      opacity: 1;
-      /* add the animation*/
-      transition: margin 0.3s;
-    }
-    
-    /* Hide the checkbox */
-    input[type="checkbox"] {
-      position: fixed;
-      right: -9999px;
-      opacity: 0;
-    }
-    
-    /* Toggle */
-    .nav-toggle {
-      display: block;
-      position: fixed;
-      top: 10px;
-      left: 0px;
-      height: 32px;
-      width: 40px;
-      cursor: pointer;
-      z-index: 99;
-      margin-left: 10px;
-      /* add the animation*/
-      transition: margin 0.3s;
-    }
-    
-    .nav-toggle span {
-      position: relative;
-      display: block;
-      height: 5px;
-      width: 40px;
-      background: goldenrod;
-      /* add the animation*/
-      transition: all 0.4s;
-    }
-    
-    .nav-toggle span:nth-child(2) {
-      top: 10px;
-    }
-    .nav-toggle span:nth-child(3) {
-      top: 20px;
-    }
-    
-    /* Toggle moving */
-    
-    input[type="checkbox"]:checked ~ .nav-toggle {
-      margin-left: 200px;
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(1) {
-      top: 13px;
-      transform: rotate(45deg);
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(2) {
-      display: none;
-    }
-    
-    input[type="checkbox"]:checked ~ .nav-toggle span:nth-child(3) {
-      top: 8px;
-      transform: rotate(-45deg);
-    }
-    
-    input[type="checkbox"]:checked ~ .menu {
-      margin-left: 0px;
-    }
-    
-    input[type="checkbox"]:checked ~ section {
-      margin-left: 200px;
-    }
-    
-    a {
-      color: goldenrod;
-      padding: 10px;
-      display: inline;
-      text-align: center;
-      text-decoration: none;
-    }
-  .cart{
+    background-color: rgba(10, 10, 10, 0.1);
+  }
+
+  .hamburger {
+    font: 20px/200% Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .nav-list li {
+    margin-left: 0vw;
+  }
+
+  .nav-list {
+    margin-top: 50px;
+  }
+
+  /* The menu */
+  .menu {
+    width: 200px;
     position: fixed;
-    width:30px;
-    height:30px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: -200px;
+    background: #222;
+    padding: 15px;
+    z-index: 2;
+    opacity: 1;
+    /* add the animation*/
+    transition: margin 0.3s;
+  }
+
+  /* Hide the checkbox */
+  input[type="checkbox"] {
+    position: fixed;
+    right: -9999px;
+    opacity: 0;
+  }
+
+  /* Toggle */
+  .nav-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 99;
+    margin-left: 10px;
+    /* add the animation*/
+    transition: margin 0.3s;
+  }
+
+  .nav-toggle span {
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 40px;
+    background: goldenrod;
+    /* add the animation*/
+    transition: all 0.4s;
+  }
+
+  .nav-toggle span:nth-child(2) {
+    top: 10px;
+  }
+
+  .nav-toggle span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Toggle moving */
+
+  input[type="checkbox"]:checked~.nav-toggle {
+    margin-left: 200px;
+  }
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(1) {
+    top: 13px;
+    transform: rotate(45deg);
+  }
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(2) {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked~.nav-toggle span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
+  }
+
+  input[type="checkbox"]:checked~.menu {
+    margin-left: 0px;
+  }
+
+  input[type="checkbox"]:checked~section {
+    margin-left: 200px;
+  }
+
+  a {
+    color: goldenrod;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .cart {
+    position: fixed;
+    width: 30px;
+    height: 30px;
     margin-left: 95%;
     margin-top: 10px;
   }
+
   /* Footer */
   /* Footer */
   /* Footer */
 
-  .footer{
-    background-color:#0b0c0c;
+  .footer {
+    background-color: #0b0c0c;
     font-size: 12px;
     text-align: center;
     font-style: bold;
-    width:auto;
+    width: auto;
     height: 60px;
     position: relative;
     left: 0;
-    right:0;
-    bottom:0;
+    right: 0;
+    bottom: 0;
     display: block;
     color: #8c784b;
- } 
+  }
 
-.f1{
-  list-style-type: none;
-  display:inline;
-  padding: 10px;
- }
+  .f1 {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+  }
 }
-        /* Wide Desktop END */
-        /* Wide Desktop END */
-        /* Wide Desktop END */
 
-
-
+/* Wide Desktop END */
+/* Wide Desktop END */
+/* Wide Desktop END */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="author" content="Rasmus Södergren, Henrik Ullén, Ibrahim Bajawa">
     <meta charset='utf-8'>
@@ -7,15 +8,34 @@
     <title>Carnivore</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
-    
+
 </head>
+
 <body>
     <header>
-        <h1>Carnivore</h1>  
-    <div class="hamburger">
-        
-        <!-- toggle -->
-       <a href="checkout.html"> <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/> </svg> </a>
+        <h1>Carnivore</h1>
+        <div class="hamburger">
+
+            <!-- toggle -->
+            <div class="dropdown">
+                <a href="checkout.html"> <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                    </svg>
+                    <div class="dropdown-content">
+                        <span class="lighter-text">Total:</span>
+                        <span class="main-color-text">399kr</span>
+                        <ul class="shopping-cart-items">
+                            <li class="clearfix">
+                                <span class="item-name">Kobe Beef</span>
+                                <span class="item-quantity">Quantity: 1</span>
+                                <img src="img/product detail-raw meat.jpg" style="width: 100px;" alt="item1" />
+                            </li>
+                    </div>
+            </div>
+            </a>
+        </div>
         <input type="checkbox" id="nav-toggle">
         <label class="nav-toggle" for="nav-toggle">
             <span></span>
@@ -24,27 +44,30 @@
         </label>
 
         <!-- Offcanvas -->
-        
+
         <nav class="menu">
             <ul class="nav-list">
                 <li class="nav-list__item"><a class="a2" href="homepage.html" title="Home">Home</a></li>
-                <li class="nav-list__item"><a class="a2" href="productpage.html" title="Product Page">Product Page</a></li>
-                <li class="nav-list__item"><a class="a2" href="detailpage.html" title="Detail page">Detail Page</a></li>
+                <li class="nav-list__item"><a class="a2" href="productpage.html" title="Product Page">Product
+                        Page</a></li>
+                <li class="nav-list__item"><a class="a2" href="detailpage.html" title="Detail page">Detail Page</a>
+                </li>
             </ul>
         </nav>
-    </div>
+        </div>
     </header>
     <section>
-        
 
 
-    <footer>
-        <li class="f1">
-        <a href="homepage.html">Main Page</a>
-        <a href="#">Privacy Policy</a>
-        <a href="checkout.html">Checkout Page</a>
-        <a href="contact.html">Contact Us</a>
-        </li>
-    </footer>
+
+        <footer>
+            <li class="f1">
+                <a href="homepage.html">Main Page</a>
+                <a href="#">Privacy Policy</a>
+                <a href="checkout.html">Checkout Page</a>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </footer>
 </body>
+
 </html>
