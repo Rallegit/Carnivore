@@ -44,7 +44,7 @@ body, html {
   order:1;
   font-size: 8vw;
   color: goldenrod;
-  z-index: 5;
+  z-index: 1;
 } 
   .box2{
     flex: 1;
@@ -146,10 +146,54 @@ margin-top: 27vh;
   width: auto;
   height: 30vh;
 }
+
 .footer{
-  position: sticky;
-  margin-bottom: 0;
-  width: 100vw;
-  text-shadow: none;
+  background-color:#0b0c0c;
+  font-size: 12px;
+  text-align: center;
+  font-style: bold;
+  width:auto;
+  height: 60px;
+  position: relative;
+  left: 0;
+  right:0;
+  bottom:0;
+  display: block;
+  color: goldenrod;
 }
 
+
+/* Mindre Desktop storlek mellan: 960px-1199px */
+@media only screen and (min-width: 960px) and (max-width: 1199px){
+  .blurp--top{
+    margin-top: 26vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .blurp--top{
+    margin-top: 30vh;
+  }
+  .arrow{
+    margin-left: 46%;
+    margin-top:-30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px)  {
+  .blurp--top{
+    margin-top: 24vh;
+  }
+  .arrow{
+    margin-top: -10vh;
+    margin-left:47%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blurp--top{
+    height:100px;
+    width: auto;
+    margin-top: 28vh;
+  }
+  .arrow{
+    margin-left: 46%;
+  }
+}
